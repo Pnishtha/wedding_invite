@@ -127,7 +127,9 @@ const inter = Inter({
 // Set NEXT_PUBLIC_SITE_URL in .env.local and on your host, e.g.
 //   NEXT_PUBLIC_SITE_URL=https://govind-weds-nishtha.com
 // WhatsApp, Facebook and X need the *absolute* https URL to fetch the preview image.
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://your-domain.com";
+// const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://your-domain.com";
+
+const siteUrl = "https://wedding-invite-mu-three.vercel.app";
 
 const title = "Govind & Nishtha | Wedding Invitation";
 const description =
@@ -168,7 +170,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "/images/wedding-og.png", // file lives in public/images/
+        url: "/wedding-og.png", // file lives in public/images/
         width: 1200,
         height: 630,
         alt: "Govind & Nishtha are getting married on 02 December 2026",
@@ -181,7 +183,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/wedding-og.png"],
+    images: ["/wedding-og.png"],
   },
 
   robots: {
